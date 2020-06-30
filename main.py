@@ -17,7 +17,7 @@ max_follows = 50
 def main():
 	global driver
 	print('running script..')
-	driver = webdriver.Chrome('./chromedriver.exe')
+	driver = webdriver.Chrome('./chromedriver')
 	l = login.Login(driver, username, password)
 	l.signin()
 	gp = getpages.Getpages(driver)
